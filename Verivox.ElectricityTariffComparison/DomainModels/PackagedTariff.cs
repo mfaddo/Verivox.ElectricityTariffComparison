@@ -31,6 +31,7 @@ namespace Verivox.ElectricityTariffComparison.DomainModels
         // Override method to calculate the annual cost for the packaged tariff
         public override decimal CalculateAnnualCost(decimal consumption)
         {
+            AssertionConcern.AssertArgumentGreaterThanOrEqual(consumption, 0, "consumption");
             if (consumption <= IncludedKwh)
             {
                 return BaseCost;
