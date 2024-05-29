@@ -9,6 +9,7 @@ namespace Verivox.ElectricityTariffComparison.DomainModels
         /// </summary>
         public string Name { get; private set; }
 
+
         /// <summary>
         /// type of tariff (basic , package) 
         /// you can  add more tariff by adding more enum values
