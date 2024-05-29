@@ -1,5 +1,10 @@
 ﻿namespace Verivox.ElectricityTariffComparison.DTOs
 {
-    public record TarrifCalculationResult (string TariffName , decimal AnnualCost);
+    /// <summary>
+    /// DTO for Tarrif annula cost result
+    /// </summary>
+    public record TarrifCalculationResult
+        (string TariffName 
+        , decimal AnnualCost);
     
 }

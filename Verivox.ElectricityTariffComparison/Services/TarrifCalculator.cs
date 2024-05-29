@@ -12,6 +12,7 @@ namespace Verivox.ElectricityTariffComparison.Services
             _tariffProvider = tariffProvider;
         }
 
+
         public IEnumerable<TarrifCalculationResult> Calculate(decimal consumption)
         {
             AssertionConcern.AssertArgumentGreaterThanOrEqual(consumption, 0, "consumption");

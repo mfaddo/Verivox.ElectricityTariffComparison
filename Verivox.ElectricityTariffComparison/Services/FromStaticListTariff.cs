@@ -2,6 +2,9 @@
 
 namespace Verivox.ElectricityTariffComparison.Services
 {
+    /// <summary>
+    /// service that Mock the tariff
+    /// </summary>
     public class FromStaticListTariff : ITariffProvider
     {
         private readonly List<Tariff> _tariffs;
